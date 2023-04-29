@@ -1,0 +1,25 @@
+{
+    "contacts": [
+    {
+        "firstName": "Chris",
+        "lastName": "Bentley",
+        "email": "csbentley@sbcglobal.net",
+        "favoriteColor": "Blue",
+        "birthday": "January 30th"
+    }, 
+    {
+        "firstName": "Emi",
+        "lastName": "Dance",
+        "email": "cutiepie@donotrepley.com",
+        "favoriteColor": "Pink",
+        "birthday": "June 17th"
+    },
+    {
+        "firstName": "Kaitlyn",
+        "lastName": "Mavy",
+        "email": "katygirl@hotmail.com",
+        "favoriteColor": "Blue",
+        "birthday": "January 19th"
+    }
+]
+}

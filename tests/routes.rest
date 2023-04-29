@@ -1,0 +1,15 @@
+###Home route
+GET http://localhost:8080/
+
+### Contacts route
+GET http://localhost:8080/contacts/
+
+### Individual contact routes 
+### Contact 1
+GET http://localhost:8080/contacts/644c3c078989eabe6ac88ec3
+
+### Contact 2
+GET http://localhost:8080/contacts/644c3c208989eabe6ac8b90f
+
+### Contact 3
+GET http://localhost:8080/contacts/644c3c3a8989eabe6ac8e34e
