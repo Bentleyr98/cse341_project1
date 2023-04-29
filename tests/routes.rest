@@ -1,15 +1,24 @@
-###Home route
+###### Home routes ######
 GET http://localhost:8080/
+### 
+GET https://csecontacts.onrender.com/
 
-### Contacts route
+###### Contacts routes ######
 GET http://localhost:8080/contacts/
+### 
+GET https://csecontacts.onrender.com/contacts
 
-### Individual contact routes 
-### Contact 1
+###### Contact 1 Routes ######
 GET http://localhost:8080/contacts/644c3c078989eabe6ac88ec3
+### 
+GET https://csecontacts.onrender.com/contacts/644c3c078989eabe6ac88ec3
 
-### Contact 2
+###### Contact 2 Routes ######
 GET http://localhost:8080/contacts/644c3c208989eabe6ac8b90f
+###
+GET https://csecontacts.onrender.com/contacts/644c3c208989eabe6ac8b90f
 
-### Contact 3
+###### Contact 3 Routes ######
 GET http://localhost:8080/contacts/644c3c3a8989eabe6ac8e34e
+###
+GET https://csecontacts.onrender.com/contacts/644c3c3a8989eabe6ac8e34e
