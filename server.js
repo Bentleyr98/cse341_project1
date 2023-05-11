@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json())
 .use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Content-Type');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   res.setHeader('Content-Type', 'application/json');
   next();
 })
