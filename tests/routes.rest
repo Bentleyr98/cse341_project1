@@ -31,6 +31,15 @@ content-type: application/json
   "firstName": "Bob", "lastName": "Ross", "email": "happytrees@gmail.com", "favoriteColor": "Happy Colors", "birthday": "October 29th"
 }
 
+###
+POST https://csecontacts.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Rob", "lastName": "Boss", "email": "happyfeet@gmail.com", "favoriteColor": "Black", "birthday": "October 32nd"
+}
+
+
 ###### Update Contact ######
 PUT http://localhost:8080/contacts/645d436e0dd15929e0d03c95 HTTP/1.1
 content-type: application/json
@@ -39,7 +48,17 @@ content-type: application/json
   "firstName": "Bob", "lastName": "O'Reily", "email": "happysquirrels@gmail.com", "favoriteColor": "Gray", "birthday": "September 19th"
 }
 
+###
+PUT https://csecontacts.onrender.com/contacts/645d436e0dd15929e0d03c95 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Rob", "lastName": "Boss", "email": "happyfeet@gmail.com", "favoriteColor": "Black", "birthday": "October 32nd"
+}
 
 ###### Delete Contact ######
 
 DELETE http://localhost:8080/contacts/645d436e0dd15929e0d03c95 HTTP/1.1
+
+###
+DELETE https://csecontacts.onrender.com/contacts/645d47df0dd15929e0d03c96 HTTP/1.1
