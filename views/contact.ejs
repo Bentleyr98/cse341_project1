@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Create New Contact</title>
+    </head>
+    <body>
+      <form action="/contacts/new/" method="post">
+        <label class="bold" for="fname">First name</label>
+        <input type="text" name="client_firstname" id="fname" required value="<%- locals.lastName %>">
+        <label class="bold" for="lname">Last name</label>
+        <input type="text" name="client_lastname" id="lname" required value="<%- locals.birthday %>">
+        <label class="bold" for="email">Email address</label>
+        <input type="email" name="client_email" id="email" required value="<%= locals.email %>">
+        <input type="submit" value="Update">
+        <input type="submit" value="Create">
+        <input type="submit" value="Delete">
+        <input type="hidden" name="client_id">
+    </form>
+    </body>
+</html>
