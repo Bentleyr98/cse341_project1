@@ -6,7 +6,7 @@ GET https://csecontacts.onrender.com/
 ###### Contacts routes ######
 GET http://localhost:8080/contacts/
 ### 
-GET https://csecontacts.onrender.com/contacts
+GET https://csecontacts.onrender.com/contacts/
 
 ###### Contact 1 Routes ######
 GET http://localhost:8080/contacts/644c3c078989eabe6ac88ec3
@@ -22,3 +22,24 @@ GET https://csecontacts.onrender.com/contacts/644c3c208989eabe6ac8b90f
 GET http://localhost:8080/contacts/644c3c3a8989eabe6ac8e34e
 ###
 GET https://csecontacts.onrender.com/contacts/644c3c3a8989eabe6ac8e34e
+
+###### Create New Contact ######
+POST http://localhost:8080/contacts/ HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Bob", "lastName": "Ross", "email": "happytrees@gmail.com", "favoriteColor": "Happy Colors", "birthday": "October 29th"
+}
+
+###### Update Contact ######
+PUT http://localhost:8080/contacts/645d436e0dd15929e0d03c95 HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Bob", "lastName": "O'Reily", "email": "happysquirrels@gmail.com", "favoriteColor": "Gray", "birthday": "September 19th"
+}
+
+
+###### Delete Contact ######
+
+DELETE http://localhost:8080/contacts/645d436e0dd15929e0d03c95 HTTP/1.1
