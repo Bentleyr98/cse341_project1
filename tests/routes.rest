@@ -41,7 +41,7 @@ content-type: application/json
 
 
 ###### Update Contact ######
-PUT http://localhost:8080/contacts/645d436e0dd15929e0d03c95 HTTP/1.1
+PUT http://localhost:8080/contacts/645d48ecfbc1cbbe32b7fcbc HTTP/1.1
 content-type: application/json
 
 {
@@ -58,7 +58,7 @@ content-type: application/json
 
 ###### Delete Contact ######
 
-DELETE http://localhost:8080/contacts/645d436e0dd15929e0d03c95 HTTP/1.1
+DELETE http://localhost:8080/contacts/645d48ecfbc1cbbe32b7fcbc HTTP/1.1
 
 ###
 DELETE https://csecontacts.onrender.com/contacts/645d47df0dd15929e0d03c96 HTTP/1.1
