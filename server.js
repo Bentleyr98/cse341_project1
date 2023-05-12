@@ -4,8 +4,11 @@ const port = 8080
 require('mongodb').MongoClient;
 const mongodb = require('./database/db');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 app.set('view engine', 'ejs');
+
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./tests/swagger.json');
+
 
 app.use(bodyParser.json())
 .use((req, res, next) => {
@@ -15,6 +18,8 @@ app.use(bodyParser.json())
   next();
 })
 .use("/", require("./routes/"));
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 mongodb.initDb((err, mongodb) => {
