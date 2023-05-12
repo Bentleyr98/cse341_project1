@@ -17,7 +17,10 @@ app.use(bodyParser.json())
   res.setHeader('Content-Type', 'application/json');
   next();
 })
-.use("/", require("./routes/"));
+.use(express.urlencoded({ extended: true }))
+
+
+app.use("/", require("./routes/"));
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
