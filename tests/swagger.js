@@ -7,7 +7,7 @@ const doc = {
     title: 'Contacts API',
     description: 'This is to test routes for our contacts API',
   },
-  host: 'https://csecontacts.onrender.com/',
+  host: 'csecontacts.onrender.com/',
   schemes: ['http', 'https'],
 };
 

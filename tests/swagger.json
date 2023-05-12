@@ -5,7 +5,7 @@
     "description": "This is to test routes for our contacts API",
     "version": "1.0.0"
   },
-  "host": "https://csecontacts.onrender.com/",
+  "host": "csecontacts.onrender.com/",
   "basePath": "/",
   "schemes": [
     "http",
