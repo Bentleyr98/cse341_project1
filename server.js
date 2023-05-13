@@ -7,17 +7,18 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 app.set('view engine', 'ejs');
 
+app.use("/", require("./routes"));
+
 app.use(bodyParser.json())
 .use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key');
-  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key, Authorization');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   next();
 })
 .use(cors())
-.use(express.urlencoded({ extended: true }))
-.use("/", require("./routes"));
+.use(express.urlencoded({ extended: true }));
+
 
 mongodb.initDb((err, mongodb) => {
   if (err) {

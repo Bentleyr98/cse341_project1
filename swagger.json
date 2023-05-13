@@ -5,9 +5,10 @@
     "description": "This is to test routes for our Contacts API. Most routes will require an ID to view, edit, or delete specific contacts.",
     "version": "1.0.0"
   },
-  "host": "csecontacts.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -20,13 +21,6 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/contacts/api-docs": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
       }
     },
     "/contacts/": {
@@ -161,6 +155,13 @@
             "description": "Internal Server Error"
           }
         }
+      }
+    },
+    "/api-docs/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
       }
     }
   }
