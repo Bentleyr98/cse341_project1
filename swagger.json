@@ -11,7 +11,7 @@
     "https"
   ],
   "paths": {
-    "/": {
+    "/dad": {
       "get": {
         "description": "",
         "parameters": [],
@@ -20,13 +20,6 @@
             "description": "OK"
           }
         }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
       }
     },
     "/contacts/": {
@@ -161,6 +154,13 @@
             "description": "Internal Server Error"
           }
         }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
       }
     }
   }
