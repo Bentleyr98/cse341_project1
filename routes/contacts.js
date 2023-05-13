@@ -1,7 +1,10 @@
-const express = require('express');
-const router = new express.Router();
-
+const router = require('express').Router();
 const baseController = require("../controllers/index.js");
+
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger.json');
+router.use('/api-docs', swaggerUi.serve);
+router.get('/api-docs', swaggerUi.setup(swaggerDocument));
 
 //view all contact
 router.get("/", baseController.getAllContacts);
