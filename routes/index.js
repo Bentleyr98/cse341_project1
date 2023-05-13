@@ -3,9 +3,9 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('../swagger.json');
 const baseController = require("../controllers/index.js")
 
-router.get("/dad", baseController.sendName)
+router.get("/", baseController.sendName)
 router.use("/contacts", require("./contacts"))
-router.use("/",  require('./swagger'))
+router.use("/api-docs",  require('./swagger'))
 
 
 // router.use('/api-docs', swaggerUi.serve);
