@@ -15,9 +15,9 @@ app.use(bodyParser.json())
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   next();
 })
-.use("/", require("./routes"))
 .use(cors())
-.use(express.urlencoded({ extended: true }));
+.use(express.urlencoded({ extended: true }))
+.use("/", require("./routes"));
 
 mongodb.initDb((err, mongodb) => {
   if (err) {
