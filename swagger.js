@@ -5,8 +5,8 @@ const doc = {
     title: 'Contacts API',
     description: 'This is to test routes for our Contacts API. Most routes will require an ID to view, edit, or delete specific contacts.',
   },
-  host: 'localhost:8080',
-  schemes: ['http', 'https'],
+  host: 'csecontacts.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
