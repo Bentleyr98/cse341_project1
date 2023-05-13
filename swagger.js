@@ -3,7 +3,7 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
   info: {
     title: 'Contacts API',
-    description: 'This is to test routes for our contacts API',
+    description: 'This is to test routes for our Contacts API. Most routes will require an ID to view, edit, or delete specific contacts.',
   },
   host: 'csecontacts.onrender.com/',
   schemes: ['http', 'https']
