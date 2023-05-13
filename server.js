@@ -14,7 +14,7 @@ app.use(bodyParser.json())
   res.setHeader('Content-Type', 'application/json');
   next();
 })
-.use("/", require("./routes/"));
+.use("/", require("./routes"));
 
 mongodb.initDb((err, mongodb) => {
   if (err) {

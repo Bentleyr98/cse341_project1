@@ -14,7 +14,7 @@ const getAllContacts = async (req, res, next) => {
 };
 
 const getContact = async (req, res, next) => {
-  const userId = req.params.id;
+  const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
     .db()
