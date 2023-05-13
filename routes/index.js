@@ -5,7 +5,7 @@ const baseController = require("../controllers/index.js")
 
 router.get("/", baseController.sendName)
 router.use("/contacts", require("./contacts"))
-router.use("/api-docs",  require('./swagger'))
+// router.use("/api-docs",  require('./swagger'))
 
 
 // router.use('/api-docs', swaggerUi.serve);
