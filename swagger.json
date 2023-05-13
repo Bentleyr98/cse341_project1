@@ -5,7 +5,7 @@
     "description": "This is to test routes for our Contacts API. Most routes will require an ID to view, edit, or delete specific contacts.",
     "version": "1.0.0"
   },
-  "host": "csecontacts.onrender.com/",
+  "host": "csecontacts.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
