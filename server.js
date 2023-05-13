@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 app.set('view engine', 'ejs');
 
-app.use("/", require("./routes"));
+
 
 app.use(bodyParser.json())
 .use((req, res, next) => {
@@ -19,6 +19,8 @@ app.use(bodyParser.json())
 })
 .use(cors())
 .use(express.urlencoded({ extended: true }));
+
+app.use("/", require("./routes"));
 
 
 mongodb.initDb((err, mongodb) => {
